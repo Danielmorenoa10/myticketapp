@@ -1,0 +1,28 @@
+{
+  "name": "mitickets",
+  "version": "1.1.0",
+  "description": "Mitickets - Sistema de gestion de tickets de soporte - SENA ADSO",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"nodemon backend/server.js\" \"vite --config frontend/vite.config.js\"",
+    "dev:backend": "nodemon backend/server.js",
+    "dev:frontend": "vite --config frontend/vite.config.js",
+    "build": "vite build --config frontend/vite.config.js",
+    "start": "node backend/server.js",
+    "seed": "node backend/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.4",
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2",
+    "vite": "^6.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
